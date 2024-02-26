@@ -26,15 +26,17 @@ body{
     cursor: pointer;
     transition: .2s;
 }
-
 h2.titulo{
     color: white;
     font-size: 38px;
     text-align: center;
 }
-
 h2.titulo span{
     color: darkred;
+}
+button:hover{
+    box-shadow: 0px 0px 8px rgba(255, 0, 0, 0.726);
+    transform: scale(1.05);
 }
 /* estilo do cabeçalho */
 header{
@@ -62,10 +64,6 @@ header nav ul li{
     display: inline-block;
     padding: 0 40px;
 }
-.btn-contato button:hover{
-    box-shadow: 0px 0px 8px rgba(255, 0, 0, 0.726);
-    transform: scale(1.05);
-}
 /* Estilo do topo do site */
 section.topo-do-site{
     padding: 40px 4%;
@@ -87,7 +85,6 @@ topo-do-site .txt-topo-site p{
     color: white;
     margin: 40px 0;
 }
-
 .topo-do-site .img-topo-site img{
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
@@ -108,4 +105,59 @@ section.especialidades{
 .especialidades-box{
     color: rgb(255, 255, 255);
     padding: 40px;
+    border-radius:20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+.especialidades-box:hover{
+    transform:scale(1.05);
+    box-shadow: 0 0 20px #ffffff7a;
+    
+}  
+.especialidades-box i{
+    font-size: 70px;
+    color: white;
+}
+.especialidades-box p{
+font-size: 26px;
+}
+.especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+/*ESSTILO SOBRE*/
+section.sobre{
+    padding: 80px 4%;
+}
+section .sobre .flex{
+    align-items: center;
+    gap:60px;
+}
+.sobre .txt-sobre{
+    color: #fff;
+}
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.sobre .txt-sobre h2 span{
+    color:darkred;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color:darkred;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .2s;
 }
