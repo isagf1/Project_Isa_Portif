@@ -3,10 +3,10 @@
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
-    font-family: "Protest Guerrilla", sans-serif;
+    font-family: "Cinzel", serif;
 }
 body{
-    background-color: rgb(190, 182, 131);
+    background-color: rgb(0, 0, 0);
     height: 100vh;
 }
 .interface{
@@ -14,7 +14,27 @@ body{
     margin: 0 auto;
 }
 .flex{
-    display:flex;
+    display:flex;   
+}
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: darkred;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: darkred;
 }
 /* estilo do cabeçalho */
 header{
@@ -38,23 +58,14 @@ header a:hover{
 header nav ul{
     list-style-type:none;
 }
-header nav li{
+header nav ul li{
     display: inline-block;
     padding: 0 40px;
 }
-header .btn-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: darkred;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px rgba(255, 0, 0, 0.726);
+    transform: scale(1.05);
 }
-header .btn-contato button:hover{
-    box-shadow: 0px 0px 8px rgba(139, 0, 0, 0.726);
-}
-
 /* Estilo do topo do site */
 section.topo-do-site{
     padding: 40px 4%;
@@ -62,7 +73,39 @@ section.topo-do-site{
 section.topo-site.flex{
     align-items: center;
     justify-content: center;
+    gap: 90px;
 }
 .topo-do-site h1{
+    color:darkred;
+    font-size: 42px;
+    line-height: 40px;
+}
+.topo-do-site .txt-topo-site h1 span{
+    color:rgb(255, 255, 255);
+}
+topo-do-site .txt-topo-site p{
     color: white;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top:30px;
+    }
+}
+/* ESPECIALIDADES */
+section.especialidades{
+    padding: 40px 4%;
+}
+.especialidades-box{
+    color: rgb(255, 255, 255);
+    padding: 40px;
 }
